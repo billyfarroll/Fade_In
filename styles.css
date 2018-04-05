@@ -1,0 +1,50 @@
+/**** Making the class invisible until called upon ****/
+.hello {
+  opacity: 0;
+  margin: 25px 0 0;
+  color: white;
+  padding: 10px;
+ }
+/**** Making the class invisible until called upon ****/
+
+
+
+
+/**** calling the functionality to the class (this is called by the JS) ****/
+.FadeIn {
+    -webkit-animation: slideIn 0.8s ease 0.3s forwards;
+    animation: slideIn 0.8s ease 0.3s forwards;
+}
+/**** calling the functionality to the class (this is called by the JS) ****/
+
+
+
+
+
+/**** BEFORE & AFTER for the animation i.e. 0% to 100% - make the change, two because of browser compatability  ****/
+
+
+@-webkit-keyframes slideIn {
+    0%{
+        -webkit-transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideIn {
+    0% {
+        -webkit-transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/**** BEFORE & AFTER for the animation i.e. 0% to 100% - make the change, two because of browser compatability  ****/
